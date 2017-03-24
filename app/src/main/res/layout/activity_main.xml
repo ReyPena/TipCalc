@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.rey.tipcalc.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill Amount"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textAlignment="center"
+        android:id="@+id/Title" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="$"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currencyTextView"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/billTotalEditText"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Tip Percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="5%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fivePercentButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="10%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenPercentButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="15%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/fifteenPercentButton" />
+
+        <Button
+            android:text="20%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twentyPercentButton"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:text="Tip:  "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelTextView1"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="1"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:text="$0.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tipTotalTextView"
+            android:textAlignment="viewStart"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:text="Total:  "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelTextView2"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="1"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:text="$0.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalTextView"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
